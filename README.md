@@ -31,6 +31,15 @@
 
 ---
 
+## 🗄️ Data Management | إدارة البيانات
+The system operates using a localized data architecture:
+* **Primary Data**: `slou.csv` acts as the main knowledge base.
+* [cite_start]**Vector Cache**: `embeddings.pkl` stores the pre-calculated numerical representations for high-speed similarity matching .
+* [cite_start]**Error Logging**: `missed_questions.xlsx` functions as a dynamic database for unresolved queries [cite: 341-356].
+* 
+
+---
+
 ## ⚙️ Technical Workflow | [cite_start]سير العمل التقني [cite: 95-108]
 1.  [cite_start]**Input**: User submits a complaint. [cite: 96]
 2.  [cite_start]**Filter**: LLM checks if the request is out-of-scope (e.g., Netflix, Social Media). [cite: 53, 54, 372-376]
