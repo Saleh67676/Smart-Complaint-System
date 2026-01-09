@@ -56,8 +56,19 @@ The system operates using a localized data architecture:
 * 🚫 **7.5%** Identified as Out-of-Scope.
 
 ---
-
 ## 🛠️ How to Run | طريقة التشغيل
-1. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
+1.  **Clone the Repository**:
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+2.  **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Setup Environment**:
+    Create a `.env` file and add your key:
+    `OPENAI_API_KEY=your_key_here`
+4.  **Run the App**:
+    ```bash
+    python main.py
+    ```
