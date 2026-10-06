@@ -209,3 +209,22 @@ __marimo__/
 # Project Specific Files
 embeddings.pkl
 missed_questions.xlsx
+
+# Private runtime and dependency caches
+runtime/
+.local-venv/
+.pip-cache/
+web/node_modules/
+web/.npm-cache/
+web/.wrangler/
+web/.sites-runtime/
+web/dist/
+web/.env*
+web/.dev.vars*
+*.tsbuildinfo
+
+# The web build adapters and libraries are source code, not Python build output.
+!web/build/
+!web/build/**
+!web/lib/
+!web/lib/**

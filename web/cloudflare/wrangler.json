@@ -1,0 +1,40 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "chat",
+  "main": "../dist/server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "workers_dev": true,
+  "assets": {
+    "directory": "../dist/client"
+  },
+  "vars": {
+    "LLM_MODEL_CONVERSATION": "openai/gpt-oss-120b"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "smart-complaint-db",
+      "database_id": "ce00f396-53ea-4fa5-bd14-7d1c00df8e0c",
+      "migrations_dir": "../drizzle"
+    }
+  ],
+  "find_additional_modules": true,
+  "rules": [
+    {
+      "fallthrough": true,
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ],
+      "type": "ESModule"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

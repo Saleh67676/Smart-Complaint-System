@@ -1,7 +1,7 @@
-openai
-pandas
-numpy
-gradio
-scikit-learn
-python-dotenv
-openpyxl
+openai>=2.0,<4
+pandas>=2.2,<4
+numpy>=2,<3
+gradio>=6,<7
+scikit-learn>=1.5,<2
+python-dotenv>=1,<2
+openpyxl>=3.1,<4
